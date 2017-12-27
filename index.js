@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-    res.send('Hello');
+    res.render('contact');
 });
 
 app.listen(3000, () => console.log('server started on port 3000'));
